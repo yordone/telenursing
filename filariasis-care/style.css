@@ -57,6 +57,7 @@ h3.section-title {
 .navbar-custom .nav-link:hover,
 .navbar-custom .nav-link.active {
   color: var(--section-title);
+  text-decoration: underline;
 }
 
 .navbar-brand-logo {
