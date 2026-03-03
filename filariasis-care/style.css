@@ -86,6 +86,7 @@ h3.section-title {
 }
 
 .hero-title {
+  color: var(--btn-color);
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 1rem;
