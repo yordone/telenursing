@@ -76,7 +76,7 @@ h3.section-title {
 /* Hero Section */
 .hero-section {
   position: relative;
-  background: linear-gradient(rgba(50, 205, 50, 0.15), rgba(50, 205, 50, 0.15)), url('/filariasiscare_assets/home/MenjagaSetiapLangkah.png') no-repeat center center/cover;
+  background: linear-gradient(rgba(50, 205, 50, 0.1), rgba(50, 205, 50, 0.1)), url('/filariasiscare_assets/home/MenjagaSetiapLangkah.png') no-repeat center center/cover;
   height: 60vh;
   display: flex;
   align-items: center;
