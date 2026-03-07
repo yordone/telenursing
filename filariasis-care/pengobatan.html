@@ -381,98 +381,267 @@
     </main>
 
     <!-- Modals -->
-
-    <!-- Ivermectin Modal -->
-    <div class="modal fade" id="ivermectinModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fw-bold text-success"><i class="bi bi-capsules-pill me-2"></i>Ivermectin</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- 1. POPM Modal -->
+    <div class="modal fade" id="popmModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content overflow-hidden">
+                <div class="modal-header border-0 bg-success text-white p-4">
+                    <h5 class="modal-title fw-bold">1. Mengenal POPM</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4">
-                    <h6 class="fw-bold text-success mb-2">Indikasi</h6>
-                    <ul class="small mb-4">
-                        <li>Filariasis limfatik, Onchocerciasis, Strongyloidiasis.</li>
-                        <li>Ivermectin bekerja melumpuhkan sistem saraf parasit sehingga mikrofilaria mati.</li>
-                    </ul>
-                    <h6 class="fw-bold text-danger mb-2">Kontraindikasi</h6>
-                    <ul class="small mb-4">
-                        <li>Ibu hamil, Anak < 5 tahun atau berat < 15 kg.</li>
-                        <li>Hipersensitivitas terhadap ivermectin, Gangguan neurologis tertentu.</li>
-                    </ul>
-                    <h6 class="fw-bold text-primary mb-2">Dosis</h6>
-                    <p class="small mb-3">150–200 mcg/kgBB dosis tunggal.</p>
-                    <div class="p-3 bg-light rounded-3">
-                        <small class="fw-bold d-block mb-1">Dalam program POPM:</small>
-                        <small>Diberikan 1 kali setiap tahun selama 5 tahun atau lebih sesuai program eliminasi.</small>
+                    <h4 class="fw-bold text-success mb-3">Program Pemberian Obat Pencegahan Massal (POPM)</h4>
+                    <p class="fs-5 mb-4">Program Pemberian Obat Pencegahan Massal (POPM) bertujuan untuk memutus rantai
+                        penularan kaki gajah di daerah endemis dengan memberikan obat secara serentak kepada seluruh
+                        penduduk.</p>
+                    <div class="alert alert-success border-0 rounded-3 d-flex align-items-center">
+                        <i class="bi bi-check-circle-fill fs-3 me-3"></i>
+                        <h5 class="mb-0 fw-bold">Wajib diminum satu kali dalam setahun selama minimal lima tahun
+                            berturut-turut</h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- DEC Modal -->
-    <div class="modal fade" id="decModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fw-bold text-primary"><i class="bi bi-capsules-pill me-2"></i>DEC</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- 2. IDA Modal -->
+    <div class="modal fade" id="idaModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content overflow-hidden">
+                <div class="modal-header border-0 bg-success text-white p-4">
+                    <h5 class="modal-title fw-bold">2. Kombinasi 3 Obat (Regimen IDA)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-4">
-                    <h6 class="fw-bold text-primary mb-2">Indikasi</h6>
-                    <ul class="small mb-4">
-                        <li>Terapi filariasis limfatik (W. bancrofti, B. malayi, B. timori).</li>
-                        <li>Dalam POPM membunuh mikrofilaria dalam darah dan mengurangi transmisi.</li>
-                    </ul>
-                    <h6 class="fw-bold text-danger mb-2">Kontraindikasi</h6>
-                    <ul class="small mb-4">
-                        <li>Ibu hamil, Anak usia < 2 tahun.</li>
-                        <li>Penyakit berat/akut, Hipersensitivitas terhadap DEC.</li>
-                    </ul>
-                    <h6 class="fw-bold text-primary mb-2">Dosis</h6>
-                    <p class="small mb-3">6 mg/kgBB/hari.</p>
-                    <div class="p-3 bg-light rounded-3">
-                        <small class="fw-bold d-block mb-1">Dalam program eliminasi:</small>
-                        <small>Diberikan 1 kali setiap tahun selama minimal 5 tahun berturut-turut mengikuti siklus
-                            hidup cacing filaria.</small>
+                <div class="modal-body p-4 bg-light">
+                    <div class="horizontal-scroll-wrapper mb-4">
+                        <!-- Ivermectin Card -->
+                        <div class="drug-card">
+                            <div class="drug-img-wrapper">
+                                <img src="filariasiscare_assets/pengobatan/Kotak_Ivermectin.jpeg" alt="Ivermectin"
+                                    class="drug-img">
+                            </div>
+                            <div class="text-center">
+                                <h4 class="fw-bold mb-3">Ivermectin</h4>
+                                <p class="small text-muted mb-4">Melumpuhkan anak cacing (mikrofilaria) agar mati secara
+                                    bertahap</p>
+                                <button class="btn btn-success rounded-pill px-4 py-2 detail-btn w-100"
+                                    data-bs-toggle="modal" data-bs-target="#ivermectinModal">
+                                    Detail Indikasi & Dosis
+                                </button>
+                            </div>
+                        </div>
+                        <!-- DEC Card -->
+                        <div class="drug-card">
+                            <div class="drug-img-wrapper">
+                                <img src="filariasiscare_assets/pengobatan/Kotak_Diethylcarbamazine.jpg" alt="DEC"
+                                    class="drug-img">
+                            </div>
+                            <div class="text-center">
+                                <h4 class="fw-bold mb-3">DEC</h4>
+                                <p class="small text-muted mb-4">Membunuh anak cacing secara langsung dan membantu daya
+                                    tahan tubuh</p>
+                                <button class="btn btn-success rounded-pill px-4 py-2 detail-btn w-100"
+                                    data-bs-toggle="modal" data-bs-target="#decModal">
+                                    Detail Indikasi & Dosis
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Albendazole Card -->
+                        <div class="drug-card">
+                            <div class="drug-img-wrapper">
+                                <img src="filariasiscare_assets/pengobatan/Kotak_Albendazole.webp" alt="Albendazole"
+                                    class="drug-img">
+                            </div>
+                            <div class="text-center">
+                                <h4 class="fw-bold mb-3">Albendazole</h4>
+                                <p class="small text-muted mb-4">Memutus pasokan energi bagi cacing agar parasit tidak
+                                    dapat bertahan hidup</p>
+                                <button class="btn btn-success rounded-pill px-4 py-2 detail-btn w-100"
+                                    data-bs-toggle="modal" data-bs-target="#albendazoleModal">
+                                    Detail Indikasi & Dosis
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Albendazole Modal -->
-    <div class="modal fade" id="albendazoleModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fw-bold text-warning"><i class="bi bi-capsules-pill me-2"></i>Albendazole
-                    </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- 3. Side Effects Modal -->
+    <div class="modal fade" id="sideEffectsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content overflow-hidden">
+                <div class="modal-header border-0 bg-success text-white p-4">
+                    <h5 class="modal-title fw-bold">3. Efek Samping Pengobatan</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-4">
-                    <h6 class="fw-bold text-warning mb-2">Indikasi</h6>
-                    <ul class="small mb-4">
-                        <li>Antelmintik spektrum luas, menghambat metabolisme glukosa cacing.</li>
-                        <li>Kombinasi dengan DEC/Ivermectin untuk filariasis dan cacing usus.</li>
-                    </ul>
-                    <h6 class="fw-bold text-danger mb-2">Kontraindikasi</h6>
-                    <ul class="small mb-4">
-                        <li>Ibu hamil (trimester pertama), Anak < 2 tahun.</li>
-                        <li>Alergi benzimidazole, Gangguan fungsi hati berat.</li>
-                    </ul>
-                    <h6 class="fw-bold text-primary mb-2">Dosis</h6>
-                    <p class="small mb-3">400 mg dosis tunggal.</p>
-                    <div class="p-3 bg-light rounded-3">
-                        <small class="fw-bold d-block mb-1">Dalam program POPM:</small>
-                        <small>Diberikan 1 kali setahun selama minimal 5 tahun bersama DEC atau Ivermectin.</small>
+                <div class="modal-body p-4 bg-light">
+                    <div class="horizontal-scroll-wrapper">
+                        <div class="side-effect-card">
+                            <img src="filariasiscare_assets/pengobatan/Demam.png" alt="Demam" class="side-effect-img">
+                            <h6 class="fw-bold mb-0">Demam</h6>
+                        </div>
+                        <div class="side-effect-card">
+                            <img src="filariasiscare_assets/pengobatan/Sakit_kepala.png" alt="Sakit Kepala"
+                                class="side-effect-img">
+                            <h6 class="fw-bold mb-0">Sakit Kepala</h6>
+                        </div>
+                        <div class="side-effect-card">
+                            <img src="filariasiscare_assets/pengobatan/Nyeri_otot.png" alt="Nyeri Otot"
+                                class="side-effect-img">
+                            <h6 class="fw-bold mb-0">Nyeri Otot</h6>
+                        </div>
+                        <div class="side-effect-card">
+                            <img src="filariasiscare_assets/pengobatan/Mual.png" alt="Mual" class="side-effect-img">
+                            <h6 class="fw-bold mb-0">Mual</h6>
+                        </div>
+                        <div class="side-effect-card">
+                            <img src="filariasiscare_assets/pengobatan/Sakit_perut.png" alt="Sakit Perut"
+                                class="side-effect-img">
+                            <h6 class="fw-bold mb-0">Sakit Perut</h6>
+                        </div>
+                        <div class="side-effect-card">
+                            <img src="filariasiscare_assets/pengobatan/Bengkak.png" alt="Bengkak"
+                                class="side-effect-img">
+                            <h6 class="fw-bold mb-0">Bengkak</h6>
+                        </div>
+                        <div class="side-effect-card">
+                            <img src="filariasiscare_assets/pengobatan/Gatal.png" alt="Gatal" class="side-effect-img">
+                            <h6 class="fw-bold mb-0">Gatal-gatal</h6>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- 4. Handling Modal -->
+    <div class="modal fade" id="handlingModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content overflow-hidden">
+                <div class="modal-header border-0 bg-success text-white p-4">
+                    <h5 class="modal-title fw-bold">4. Penanganan Efek Samping Ringan</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="accordion accordion-flush" id="penangananAccordionModal">
+                        <!-- Gejala Sistemik -->
+                        <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold text-success" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseSystemicM">
+                                    Gejala Sistemik (Demam, Sakit Kepala, Nyeri Otot)
+                                </button>
+                            </h2>
+                            <div id="collapseSystemicM" class="accordion-collapse collapse"
+                                data-bs-parent="#penangananAccordionModal">
+                                <div class="accordion-body bg-light">
+                                    <ul class="mb-0">
+                                        <li>Istirahat yang cukup.</li>
+                                        <li>Minum air putih lebih banyak.</li>
+                                        <li>Bila perlu, minum obat penurun demam (seperti Paracetamol) sesuai anjuran
+                                            petugas kesehatan.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gejala Pencernaan -->
+                        <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold text-success" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseDigestiveM">
+                                    Gejala Pencernaan (Mual, Sakit Perut)
+                                </button>
+                            </h2>
+                            <div id="collapseDigestiveM" class="accordion-collapse collapse"
+                                data-bs-parent="#penangananAccordionModal">
+                                <div class="accordion-body bg-light">
+                                    <ul class="mb-0">
+                                        <li>Makan dalam porsi sedikit tapi sering.</li>
+                                        <li>Hindari makanan yang terlalu asam atau pedas sementara waktu.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Reaksi Lokal -->
+                        <div class="accordion-item border rounded-3 overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold text-success" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseLocalM">
+                                    Reaksi Lokal (Bengkak, Gatal-gatal)
+                                </button>
+                            </h2>
+                            <div id="collapseLocalM" class="accordion-collapse collapse"
+                                data-bs-parent="#penangananAccordionModal">
+                                <div class="accordion-body bg-light">
+                                    <ul class="mb-0">
+                                        <li>Kompres dingin pada bagian yang bengkak.</li>
+                                        <li>Hindari menggaruk bagian yang gatal.</li>
+                                        <li>Jika gatal sangat mengganggu, bicarakan dengan petugas.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. AMAN Modal -->
+    <div class="modal fade" id="amanModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content overflow-hidden">
+                <div class="modal-header border-0 bg-success text-white p-4">
+                    <h5 class="modal-title fw-bold">5. Prinsip AMAN</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 bg-light">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="aman-card">
+                                <div class="aman-letter">A</div>
+                                <h5 class="fw-bold">Aman Indikasi</h5>
+                                <p class="small text-muted mb-0">Memastikan obat diberikan kepada sasaran yang tepat dan
+                                    tidak kontraindikasi.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="aman-card" style="border-top-color: #ffc107;">
+                                <div class="aman-letter" style="color: #ffc107;">M</div>
+                                <h5 class="fw-bold">Aman Dosis</h5>
+                                <p class="small text-muted mb-0">Pemberian dosis obat disesuaikan dengan umur atau
+                                    tinggi badan.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="aman-card" style="border-top-color: #0dcaf0;">
+                                <div class="aman-letter" style="color: #0dcaf0;">A</div>
+                                <h5 class="fw-bold">Aman Cara</h5>
+                                <p class="small text-muted mb-0">Obat diminum di depan petugas kesehatan (DOTS).</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="aman-card" style="border-top-color: #ff7e5f;">
+                                <div class="aman-letter" style="color: #ff7e5f;">N</div>
+                                <h5 class="fw-bold">Aman Pemantauan</h5>
+                                <p class="small text-muted mb-0">Memantau kemungkinan efek samping setelah pemberian
+                                    obat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detail Modals for Drugs -->
 
     <!-- Footer -->
     <footer>
