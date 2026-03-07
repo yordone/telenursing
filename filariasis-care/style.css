@@ -135,6 +135,50 @@ h3.section-title {
   font-weight: 400;
 }
 
+/* Prevalence Section */
+.prevalence-section {
+  padding: 5rem 0;
+  background-color: #f8fef8;
+}
+
+.prevalence-card {
+  background: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  height: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(50, 205, 50, 0.1);
+}
+
+.prevalence-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  border-color: var(--btn-color);
+}
+
+.prevalence-icon {
+  font-size: 3rem;
+  color: var(--btn-color);
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.prevalence-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--page-title);
+  margin-bottom: 1rem;
+}
+
+.prevalence-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
 /* Cards */
 .custom-card {
   border: none;
