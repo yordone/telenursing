@@ -84,6 +84,11 @@ h3.section-title {
   transform: translateX(5px);
 }
 
+.navbar-custom .dropdown-item.active {
+  background-color: var(--btn-color);
+  color: #ffffff !important;
+}
+
 .navbar-brand-logo {
   font-size: 1.5rem;
   font-weight: 700;
