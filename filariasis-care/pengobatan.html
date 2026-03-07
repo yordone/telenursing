@@ -101,16 +101,24 @@
                 <div class="row g-4 justify-content-center">
                     <!-- Box 1: Mengenal POPM -->
                     <div class="col-lg-10">
-                        <div class="card treatment-card shadow-sm p-4" data-bs-toggle="modal"
-                            data-bs-target="#popmModal">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <div class="drug-icon-wrapper mb-0 me-4">
-                                        <i class="bi bi-megaphone-fill"></i>
-                                    </div>
-                                    <h3 class="mb-0 fw-bold">1. Mengenal POPM</h3>
+                        <div class="card treatment-card shadow-sm p-4 border-0">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="drug-icon-wrapper mb-0 me-4">
+                                    <i class="bi bi-megaphone-fill"></i>
                                 </div>
-                                <i class="bi bi-arrow-right-circle fs-3 text-success"></i>
+                                <h3 class="mb-0 fw-bold">1. Mengenal POPM</h3>
+                            </div>
+                            <div class="pt-4 mt-4 border-top">
+                                <h4 class="fw-bold text-success mb-3">Program Pemberian Obat Pencegahan Massal (POPM)
+                                </h4>
+                                <p class="fs-5">Program Pemberian Obat Pencegahan Massal (POPM) bertujuan untuk memutus
+                                    rantai penularan kaki gajah di daerah endemis dengan memberikan obat secara serentak
+                                    kepada seluruh penduduk.</p>
+                                <div class="alert alert-success border-0 rounded-3 d-flex align-items-center mt-3">
+                                    <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+                                    <span class="fw-bold">Obat wajib diminum satu kali dalam setahun selama minimal lima
+                                        tahun berturut-turut</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -119,59 +127,53 @@
                     <div class="col-lg-10 mt-5">
                         <div class="text-center mb-4">
                             <h3 class="fw-bold fs-2">2. Kombinasi 3 Obat (Regimen IDA)</h3>
-                            <div class="mt-3">
-                                <i class="bi bi-capsules text-success display-1"></i>
-                            </div>
+                            <p class="text-muted">(Geser untuk melihat jenis obat)</p>
                         </div>
 
-                        <ul class="nav nav-tabs medical-tabs justify-content-center border-0 mb-0" id="idaTab"
-                            role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="ivermectin-tab" data-bs-toggle="tab"
-                                    data-bs-target="#ivermectin-panel" type="button" role="tab">Ivermectin</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="dec-tab" data-bs-toggle="tab" data-bs-target="#dec-panel"
-                                    type="button" role="tab">DEC</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="albendazole-tab" data-bs-toggle="tab"
-                                    data-bs-target="#albendazole-panel" type="button" role="tab">Albendazole</button>
-                            </li>
-                        </ul>
-
-                        <div class="tab-content tab-content-wrapper mb-5" id="idaTabContent">
-                            <!-- Ivermectin Panel -->
-                            <div class="tab-pane fade show active" id="ivermectin-panel" role="tabpanel">
+                        <div class="horizontal-scroll-wrapper mb-5">
+                            <!-- Ivermectin Card -->
+                            <div class="drug-card">
+                                <div class="drug-img-wrapper">
+                                    <img src="filariasiscare_assets/pengobatan/Kotak_Ivermectin.jpeg" alt="Ivermectin"
+                                        class="drug-img">
+                                </div>
                                 <div class="text-center">
                                     <h4 class="fw-bold mb-3">Ivermectin</h4>
-                                    <p class="fs-5 text-muted mb-4">Melumpuhkan anak cacing (mikrofilaria) agar mati
+                                    <p class="small text-muted mb-4">Melumpuhkan anak cacing (mikrofilaria) agar mati
                                         secara bertahap</p>
-                                    <button class="btn btn-success rounded-pill px-4 py-2 detail-btn"
+                                    <button class="btn btn-success rounded-pill px-4 py-2 detail-btn w-100"
                                         data-bs-toggle="modal" data-bs-target="#ivermectinModal">
                                         Detail Indikasi & Dosis
                                     </button>
                                 </div>
                             </div>
-                            <!-- DEC Panel -->
-                            <div class="tab-pane fade" id="dec-panel" role="tabpanel">
+                            <!-- DEC Card -->
+                            <div class="drug-card">
+                                <div class="drug-img-wrapper">
+                                    <img src="filariasiscare_assets/pengobatan/Kotak_Diethylcarbamazine.jpg" alt="DEC"
+                                        class="drug-img">
+                                </div>
                                 <div class="text-center">
-                                    <h4 class="fw-bold mb-3">Diethylcarbamazine (DEC)</h4>
-                                    <p class="fs-5 text-muted mb-4">Membunuh anak cacing secara langsung dan membantu
-                                        daya tahan tubuh menyerang parasit</p>
-                                    <button class="btn btn-success rounded-pill px-4 py-2 detail-btn"
+                                    <h4 class="fw-bold mb-3">DEC</h4>
+                                    <p class="small text-muted mb-4">Membunuh anak cacing secara langsung dan membantu
+                                        daya tahan tubuh</p>
+                                    <button class="btn btn-success rounded-pill px-4 py-2 detail-btn w-100"
                                         data-bs-toggle="modal" data-bs-target="#decModal">
                                         Detail Indikasi & Dosis
                                     </button>
                                 </div>
                             </div>
-                            <!-- Albendazole Panel -->
-                            <div class="tab-pane fade" id="albendazole-panel" role="tabpanel">
+                            <!-- Albendazole Card -->
+                            <div class="drug-card">
+                                <div class="drug-img-wrapper">
+                                    <img src="filariasiscare_assets/pengobatan/Kotak_Albendazole.webp" alt="Albendazole"
+                                        class="drug-img">
+                                </div>
                                 <div class="text-center">
                                     <h4 class="fw-bold mb-3">Albendazole</h4>
-                                    <p class="fs-5 text-muted mb-4">Memutus pasokan energi bagi cacing agar parasit
+                                    <p class="small text-muted mb-4">Memutus pasokan energi bagi cacing agar parasit
                                         tidak dapat bertahan hidup</p>
-                                    <button class="btn btn-success rounded-pill px-4 py-2 detail-btn"
+                                    <button class="btn btn-success rounded-pill px-4 py-2 detail-btn w-100"
                                         data-bs-toggle="modal" data-bs-target="#albendazoleModal">
                                         Detail Indikasi & Dosis
                                     </button>
@@ -188,35 +190,42 @@
                     <div class="col-lg-10 mt-4">
                         <div class="card treatment-card shadow-sm p-4 mb-4 border-0">
                             <h3 class="fw-bold mb-2">3. Efek Samping Pengobatan</h3>
-                            <p class="text-muted mb-4">(Geser untuk melihat)</p>
+                            <p class="text-muted mb-4">(Geser untuk melihat gejala)</p>
 
                             <div class="horizontal-scroll-wrapper">
                                 <div class="side-effect-card">
-                                    <i class="bi bi-thermometer-high side-effect-icon"></i>
+                                    <img src="filariasiscare_assets/pengobatan/Demam.png" alt="Demam"
+                                        class="side-effect-img">
                                     <h6 class="fw-bold mb-0">Demam</h6>
                                 </div>
                                 <div class="side-effect-card">
-                                    <i class="bi bi-headset side-effect-icon"></i>
+                                    <img src="filariasiscare_assets/pengobatan/Sakit_kepala.png" alt="Sakit Kepala"
+                                        class="side-effect-img">
                                     <h6 class="fw-bold mb-0">Sakit Kepala</h6>
                                 </div>
                                 <div class="side-effect-card">
-                                    <i class="bi bi-activity side-effect-icon"></i>
+                                    <img src="filariasiscare_assets/pengobatan/Nyeri_otot.png" alt="Nyeri Otot"
+                                        class="side-effect-img">
                                     <h6 class="fw-bold mb-0">Nyeri Otot</h6>
                                 </div>
                                 <div class="side-effect-card">
-                                    <i class="bi bi-water side-effect-icon"></i>
+                                    <img src="filariasiscare_assets/pengobatan/Mual.png" alt="Mual"
+                                        class="side-effect-img">
                                     <h6 class="fw-bold mb-0">Mual</h6>
                                 </div>
                                 <div class="side-effect-card">
-                                    <i class="bi bi-hand-thumbs-down side-effect-icon"></i>
+                                    <img src="filariasiscare_assets/pengobatan/Sakit_perut.png" alt="Sakit Perut"
+                                        class="side-effect-img">
                                     <h6 class="fw-bold mb-0">Sakit Perut</h6>
                                 </div>
                                 <div class="side-effect-card">
-                                    <i class="bi bi-droplet-half side-effect-icon"></i>
+                                    <img src="filariasiscare_assets/pengobatan/Bengkak.png" alt="Bengkak"
+                                        class="side-effect-img">
                                     <h6 class="fw-bold mb-0">Bengkak</h6>
                                 </div>
                                 <div class="side-effect-card">
-                                    <i class="bi bi-virus side-effect-icon"></i>
+                                    <img src="filariasiscare_assets/pengobatan/Gatal.png" alt="Gatal"
+                                        class="side-effect-img">
                                     <h6 class="fw-bold mb-0">Gatal-gatal</h6>
                                 </div>
                             </div>
@@ -372,28 +381,6 @@
     </main>
 
     <!-- Modals -->
-    <!-- POPM Modal -->
-    <div class="modal fade" id="popmModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content overflow-hidden">
-                <div class="modal-header border-0 bg-success text-white p-4">
-                    <h5 class="modal-title fw-bold">Program Pemberian Obat Pencegahan Massal (POPM)</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-4">
-                    <p class="fs-5 mb-4">Program Pemberian Obat Pencegahan Massal (POPM) bertujuan untuk memutus rantai
-                        penularan kaki gajah di daerah endemis dengan memberikan obat secara serentak kepada seluruh
-                        penduduk.</p>
-                    <div class="alert alert-success border-0 rounded-3 d-flex align-items-center">
-                        <i class="bi bi-check-circle-fill fs-3 me-3"></i>
-                        <h5 class="mb-0 fw-bold">Wajib diminum satu kali dalam setahun selama minimal lima tahun
-                            berturut-turut</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Ivermectin Modal -->
     <div class="modal fade" id="ivermectinModal" tabindex="-1" aria-hidden="true">

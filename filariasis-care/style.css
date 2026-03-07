@@ -406,18 +406,54 @@ footer .social-icons a {
 }
 
 .side-effect-card {
-  flex: 0 0 180px;
+  flex: 0 0 220px;
   background: #fff;
   padding: 1.5rem;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
-.side-effect-icon {
-  font-size: 2.5rem;
-  color: var(--btn-color);
-  margin-bottom: 0.75rem;
+.side-effect-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.drug-card {
+  flex: 0 0 300px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.drug-card:hover {
+  transform: translateY(-5px);
+}
+
+.drug-img-wrapper {
+  width: 100%;
+  height: 180px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.drug-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1rem;
 }
 
 .aman-card {
