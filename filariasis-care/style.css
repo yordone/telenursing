@@ -120,6 +120,21 @@ h3.section-title {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+/* Home Intro Section */
+.home-intro {
+  padding: 5rem 0;
+  background-color: #ffffff;
+}
+
+.home-intro-text {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 900px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
 /* Cards */
 .custom-card {
   border: none;
