@@ -98,281 +98,45 @@
                     </p>
                 </div>
 
-                <div class="row g-4 justify-content-center">
-                    <!-- Box 1: Mengenal POPM -->
-                    <div class="col-lg-10">
-                        <div class="card treatment-card shadow-sm p-4 border-0">
-                            <div class="d-flex align-items-center mb-4">
-                                <div class="drug-icon-wrapper mb-0 me-4">
-                                    <i class="bi bi-megaphone-fill"></i>
-                                </div>
-                                <h3 class="mb-0 fw-bold">1. Mengenal POPM</h3>
-                            </div>
-                            <div class="pt-4 mt-4 border-top">
-                                <h4 class="fw-bold text-success mb-3">Program Pemberian Obat Pencegahan Massal (POPM)
-                                </h4>
-                                <p class="fs-5">Program Pemberian Obat Pencegahan Massal (POPM) bertujuan untuk memutus
-                                    rantai penularan kaki gajah di daerah endemis dengan memberikan obat secara serentak
-                                    kepada seluruh penduduk.</p>
-                                <div class="alert alert-success border-0 rounded-3 d-flex align-items-center mt-3">
-                                    <i class="bi bi-info-circle-fill fs-4 me-3"></i>
-                                    <span class="fw-bold">Obat wajib diminum satu kali dalam setahun selama minimal lima
-                                        tahun berturut-turut</span>
-                                </div>
-                            </div>
+                <!-- 3 Top Cards -->
+                <div class="row g-4 justify-content-center mb-4">
+                    <!-- Card 1: POPM -->
+                    <div class="col-md-4">
+                        <div class="menu-card h-100" data-bs-toggle="modal" data-bs-target="#popmModal">
+                            <div class="menu-card-icon"><i class="bi bi-megaphone-fill"></i></div>
+                            <h5 class="fs-5 fw-bold">1. Mengenal POPM</h5>
                         </div>
                     </div>
-
-                    <!-- Box 2: Mengenal Kombinasi Obat IDA -->
-                    <div class="col-lg-10 mt-5">
-                        <div class="text-center mb-4">
-                            <h3 class="fw-bold fs-2">2. Kombinasi 3 Obat (Regimen IDA)</h3>
-                            <p class="text-muted">(Geser untuk melihat jenis obat)</p>
-                        </div>
-
-                        <div class="horizontal-scroll-wrapper mb-5">
-                            <!-- Ivermectin Card -->
-                            <div class="drug-card">
-                                <div class="drug-img-wrapper">
-                                    <img src="filariasiscare_assets/pengobatan/Kotak_Ivermectin.jpeg" alt="Ivermectin"
-                                        class="drug-img">
-                                </div>
-                                <div class="text-center">
-                                    <h4 class="fw-bold mb-3">Ivermectin</h4>
-                                    <p class="small text-muted mb-4">Melumpuhkan anak cacing (mikrofilaria) agar mati
-                                        secara bertahap</p>
-                                    <button class="btn btn-success rounded-pill px-4 py-2 detail-btn w-100"
-                                        data-bs-toggle="modal" data-bs-target="#ivermectinModal">
-                                        Detail Indikasi & Dosis
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- DEC Card -->
-                            <div class="drug-card">
-                                <div class="drug-img-wrapper">
-                                    <img src="filariasiscare_assets/pengobatan/Kotak_Diethylcarbamazine.jpg" alt="DEC"
-                                        class="drug-img">
-                                </div>
-                                <div class="text-center">
-                                    <h4 class="fw-bold mb-3">DEC</h4>
-                                    <p class="small text-muted mb-4">Membunuh anak cacing secara langsung dan membantu
-                                        daya tahan tubuh</p>
-                                    <button class="btn btn-success rounded-pill px-4 py-2 detail-btn w-100"
-                                        data-bs-toggle="modal" data-bs-target="#decModal">
-                                        Detail Indikasi & Dosis
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- Albendazole Card -->
-                            <div class="drug-card">
-                                <div class="drug-img-wrapper">
-                                    <img src="filariasiscare_assets/pengobatan/Kotak_Albendazole.webp" alt="Albendazole"
-                                        class="drug-img">
-                                </div>
-                                <div class="text-center">
-                                    <h4 class="fw-bold mb-3">Albendazole</h4>
-                                    <p class="small text-muted mb-4">Memutus pasokan energi bagi cacing agar parasit
-                                        tidak dapat bertahan hidup</p>
-                                    <button class="btn btn-success rounded-pill px-4 py-2 detail-btn w-100"
-                                        data-bs-toggle="modal" data-bs-target="#albendazoleModal">
-                                        Detail Indikasi & Dosis
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="text-center text-muted fst-italic mb-5">Ketiga obat ini secara signifikan mempercepat
-                            proses eliminasi parasit dalam darah, sehingga rantai penularan di masyarakat dapat diputus
-                            secara lebih cepat dan tuntas.</p>
-                    </div>
-
-                    <!-- Box 3: Efek Samping Pengobatan -->
-                    <div class="col-lg-10 mt-4">
-                        <div class="card treatment-card shadow-sm p-4 mb-4 border-0">
-                            <h3 class="fw-bold mb-2">3. Efek Samping Pengobatan</h3>
-                            <p class="text-muted mb-4">(Geser untuk melihat gejala)</p>
-
-                            <div class="horizontal-scroll-wrapper">
-                                <div class="side-effect-card">
-                                    <img src="filariasiscare_assets/pengobatan/Demam.png" alt="Demam"
-                                        class="side-effect-img">
-                                    <h6 class="fw-bold mb-0">Demam</h6>
-                                </div>
-                                <div class="side-effect-card">
-                                    <img src="filariasiscare_assets/pengobatan/Sakit_kepala.png" alt="Sakit Kepala"
-                                        class="side-effect-img">
-                                    <h6 class="fw-bold mb-0">Sakit Kepala</h6>
-                                </div>
-                                <div class="side-effect-card">
-                                    <img src="filariasiscare_assets/pengobatan/Nyeri_otot.png" alt="Nyeri Otot"
-                                        class="side-effect-img">
-                                    <h6 class="fw-bold mb-0">Nyeri Otot</h6>
-                                </div>
-                                <div class="side-effect-card">
-                                    <img src="filariasiscare_assets/pengobatan/Mual.png" alt="Mual"
-                                        class="side-effect-img">
-                                    <h6 class="fw-bold mb-0">Mual</h6>
-                                </div>
-                                <div class="side-effect-card">
-                                    <img src="filariasiscare_assets/pengobatan/Sakit_perut.png" alt="Sakit Perut"
-                                        class="side-effect-img">
-                                    <h6 class="fw-bold mb-0">Sakit Perut</h6>
-                                </div>
-                                <div class="side-effect-card">
-                                    <img src="filariasiscare_assets/pengobatan/Bengkak.png" alt="Bengkak"
-                                        class="side-effect-img">
-                                    <h6 class="fw-bold mb-0">Bengkak</h6>
-                                </div>
-                                <div class="side-effect-card">
-                                    <img src="filariasiscare_assets/pengobatan/Gatal.png" alt="Gatal"
-                                        class="side-effect-img">
-                                    <h6 class="fw-bold mb-0">Gatal-gatal</h6>
-                                </div>
-                            </div>
+                    <!-- Card 2: IDA -->
+                    <div class="col-md-4">
+                        <div class="menu-card h-100" data-bs-toggle="modal" data-bs-target="#idaModal">
+                            <div class="menu-card-icon"><i class="bi bi-capsules"></i></div>
+                            <h5 class="fs-5 fw-bold">2. Kombinasi Obat IDA</h5>
                         </div>
                     </div>
-
-                    <!-- Box 4: Penanganan Efek Samping -->
-                    <div class="col-lg-10 mt-4">
-                        <h3 class="fw-bold mb-4">4. Penanganan Efek Samping Ringan</h3>
-                        <div class="accordion custom-accordion shadow-sm" id="handlingAccordion">
-                            <!-- Item 1 -->
-                            <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed fw-bold py-3" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#handle1">
-                                        Gejala Sistemik (Demam dan Nyeri)
-                                    </button>
-                                </h2>
-                                <div id="handle1" class="accordion-collapse collapse"
-                                    data-bs-parent="#handlingAccordion">
-                                    <div class="accordion-body bg-white p-4">
-                                        <ul class="mb-0 fs-6">
-                                            <li class="mb-2">Minum air putih minimal 2 liter per hari untuk membantu
-                                                ginjal mengeluarkan sisa metabolisme dari cacing yang mati.</li>
-                                            <li class="mb-2">Konsumsi Paracetamol (500 mg untuk dewasa, setiap 6-8 jam
-                                                jika perlu). Parasetamol efektif meredakan reaksi imun ringan
-                                                pasca-pengobatan.</li>
-                                            <li>Hindari aktivitas fisik berat selama 24-48 jam pertama setelah minum
-                                                obat untuk menurunkan beban kerja jantung dan otot.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 2 -->
-                            <div class="accordion-item border-0 mb-2 rounded-3 overflow-hidden">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed fw-bold py-3" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#handle2">
-                                        Gangguan Pencernaan (Mual dan Sakit Perut)
-                                    </button>
-                                </h2>
-                                <div id="handle2" class="accordion-collapse collapse"
-                                    data-bs-parent="#handlingAccordion">
-                                    <div class="accordion-body bg-white p-4">
-                                        <ul class="mb-0 fs-6">
-                                            <li class="mb-2">Pastikan obat filariasis diminum setelah makan kenyang.
-                                                Lemak dalam makanan justru membantu penyerapan Albendazole, namun perut
-                                                yang terisi melindungi mukosa lambung dari iritasi DEC.</li>
-                                            <li>Konsumsi air jahe hangat dapat membantu meredakan mual secara alami
-                                                tanpa berinteraksi negatif dengan obat cacing.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Item 3 -->
-                            <div class="accordion-item border-0 rounded-3 overflow-hidden">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed fw-bold py-3" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#handle3">
-                                        Reaksi Lokal (Bengkak dan Gatal)
-                                    </button>
-                                </h2>
-                                <div id="handle3" class="accordion-collapse collapse"
-                                    data-bs-parent="#handlingAccordion">
-                                    <div class="accordion-body bg-white p-4">
-                                        <ul class="mb-0 fs-6">
-                                            <li class="mb-2">Gunakan kompres es atau air dingin pada area yang
-                                                bengkak/nyeri untuk mengurangi peradangan.</li>
-                                            <li class="mb-2">Jika muncul gatal-gatal atau kemerahan pada kulit, dapat
-                                                menggunakan antihistamin ringan seperti Cetirizine (10 mg, sekali
-                                                sehari).</li>
-                                            <li>Jika terjadi bengkak pada kaki, posisikan kaki lebih tinggi dari jantung
-                                                saat berbaring.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                    <!-- Card 3: Efek Samping -->
+                    <div class="col-md-4">
+                        <div class="menu-card h-100" data-bs-toggle="modal" data-bs-target="#sideEffectsModal">
+                            <div class="menu-card-icon"><i class="bi bi-heart-pulse-fill text-danger"></i></div>
+                            <h5 class="fs-5 fw-bold">3. Efek Samping Ringan</h5>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Box 5: Prinsip AMAN -->
-                    <div class="col-lg-10 mt-5 mb-5">
-                        <div class="text-center mb-5">
-                            <h3 class="fw-bold fs-2">5. Prinsip AMAN</h3>
-                            <p class="text-muted mx-auto" style="max-width: 800px;">
-                                Prinsip AMAN dalam penggunaan obat filariasis adalah pedoman untuk memastikan terapi
-                                berjalan efektif dan meminimalkan efek samping, terutama pada program Pemberian Obat
-                                Pencegahan Massal (POPM).
-                            </p>
-                        </div>
-
-                        <div class="row g-4">
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="aman-card">
-                                    <div class="aman-letter">A</div>
-                                    <h5 class="fw-bold">Aman Indikasi</h5>
-                                    <p class="small text-muted mb-0">Obat diberikan sesuai indikasi yang benar, yaitu
-                                        pada
-                                        penderita atau populasi di daerah endemis filariasis (kaki gajah).</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="aman-card">
-                                    <div class="aman-letter">M</div>
-                                    <h5 class="fw-bold">Aman Dosis</h5>
-                                    <p class="small text-muted mb-0">Diberikan sesuai dosis yang dianjurkan berdasarkan
-                                        umur dan/atau berat badan.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="aman-card">
-                                    <div class="aman-letter">A</div>
-                                    <h5 class="fw-bold">Aman Cara Pemberian</h5>
-                                    <p class="small text-muted mb-0">Diminum setelah makan untuk mengurangi efek
-                                        samping. Dikunyah (untuk albendazole) sebelum ditelan. Di bawah pengawasan.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="aman-card">
-                                    <div class="aman-letter">N</div>
-                                    <h5 class="fw-bold">Aman Pemantauan</h5>
-                                    <p class="small text-muted mb-0">Memantau kemungkinan efek samping seperti demam,
-                                        pusing, mual, atau reaksi alergi akibat kematian mikrofilaria.</p>
-                                </div>
-                            </div>
+                <!-- 2 Bottom Cards -->
+                <div class="row g-4 justify-content-center mb-5">
+                    <!-- Card 4: Penanganan -->
+                    <div class="col-md-4">
+                        <div class="menu-card h-100" data-bs-toggle="modal" data-bs-target="#handlingModal">
+                            <div class="menu-card-icon"><i class="bi bi-bandaid-fill text-info"></i></div>
+                            <h5 class="fs-5 fw-bold">4. Penanganan Efek Samping</h5>
                         </div>
                     </div>
-
-                    <!-- Footer Warning Box -->
-                    <div class="col-lg-10">
-                        <div class="card shadow-sm sticky-warning p-4 rounded-4">
-                            <div class="d-flex align-items-center">
-                                <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-4"
-                                    style="width: 60px; height: 60px; min-width: 60px;">
-                                    <i class="bi bi-exclamation-triangle-fill fs-3"></i>
-                                </div>
-                                <div>
-                                    <h5 class="fw-bold mb-1">Patuhi Dosis yang Ditentukan</h5>
-                                    <p class="mb-0 text-muted">
-                                        Obat wajib diminum sesuai dosis yang dianjurkan petugas kesehatan berdasarkan
-                                        umur
-                                        dan berat badan. Ketepatan dosis sangat penting untuk menjamin efektivitas
-                                        pembasmian parasit sekaligus meminimalkan risiko efek samping yang tidak
-                                        diinginkan.
-                                    </p>
-                                </div>
-                            </div>
+                    <!-- Card 5: Prinsip AMAN -->
+                    <div class="col-md-4">
+                        <div class="menu-card h-100" data-bs-toggle="modal" data-bs-target="#amanModal">
+                            <div class="menu-card-icon"><i class="bi bi-shield-check text-success"></i></div>
+                            <h5 class="fs-5 fw-bold">5. Prinsip AMAN</h5>
                         </div>
                     </div>
                 </div>
@@ -414,54 +178,39 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                 </div>
-                <div class="modal-body p-4 bg-light">
-                    <div class="horizontal-scroll-wrapper mb-4">
-                        <!-- Ivermectin Card -->
-                        <div class="drug-card">
-                            <div class="drug-img-wrapper">
-                                <img src="filariasiscare_assets/pengobatan/Kotak_Ivermectin.jpeg" alt="Ivermectin"
-                                    class="drug-img">
-                            </div>
-                            <div class="text-center">
-                                <h4 class="fw-bold mb-3">Ivermectin</h4>
-                                <p class="small text-muted mb-4">Melumpuhkan anak cacing (mikrofilaria) agar mati secara
-                                    bertahap</p>
-                                <button class="btn btn-success rounded-pill px-4 py-2 detail-btn w-100"
-                                    data-bs-toggle="modal" data-bs-target="#ivermectinModal">
-                                    Detail Indikasi & Dosis
-                                </button>
+                <div class="modal-body p-4 bg-light text-center">
+                    <p class="fs-5 mb-5">Kombinasi obat IDA adalah metode pengobatan yang menggunakan kombinasi tiga
+                        obat, yaitu Ivermectin, Diethylcarbamazine (DEC), dan Albendazole yang memiliki tingkat
+                        keberhasilan yang lebih tinggi dalam menurunkan jumlah cacing dalam darah.</p>
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm p-4">
+                                <i class="bi bi-capsules-pill text-success display-4 mb-3"></i>
+                                <h4 class="fw-bold">Ivermectin</h4>
+                                <p class="text-muted">Melumpuhkan anak cacing (mikrofilaria) agar mati secara bertahap
+                                </p>
+                                <button class="btn btn-sm btn-outline-success rounded-pill mt-auto"
+                                    data-bs-toggle="modal" data-bs-target="#ivermectinModal">Lihat Penjelasan</button>
                             </div>
                         </div>
-                        <!-- DEC Card -->
-                        <div class="drug-card">
-                            <div class="drug-img-wrapper">
-                                <img src="filariasiscare_assets/pengobatan/Kotak_Diethylcarbamazine.jpg" alt="DEC"
-                                    class="drug-img">
-                            </div>
-                            <div class="text-center">
-                                <h4 class="fw-bold mb-3">DEC</h4>
-                                <p class="small text-muted mb-4">Membunuh anak cacing secara langsung dan membantu daya
-                                    tahan tubuh</p>
-                                <button class="btn btn-success rounded-pill px-4 py-2 detail-btn w-100"
-                                    data-bs-toggle="modal" data-bs-target="#decModal">
-                                    Detail Indikasi & Dosis
-                                </button>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm p-4">
+                                <i class="bi bi-capsules-pill text-primary display-4 mb-3"></i>
+                                <h4 class="fw-bold">DEC</h4>
+                                <p class="text-muted">Membunuh anak cacing secara langsung dan membantu daya tahan tubuh
+                                </p>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill mt-auto"
+                                    data-bs-toggle="modal" data-bs-target="#decModal">Lihat Penjelasan</button>
                             </div>
                         </div>
-                        <!-- Albendazole Card -->
-                        <div class="drug-card">
-                            <div class="drug-img-wrapper">
-                                <img src="filariasiscare_assets/pengobatan/Kotak_Albendazole.webp" alt="Albendazole"
-                                    class="drug-img">
-                            </div>
-                            <div class="text-center">
-                                <h4 class="fw-bold mb-3">Albendazole</h4>
-                                <p class="small text-muted mb-4">Memutus pasokan energi bagi cacing agar parasit tidak
-                                    dapat bertahan hidup</p>
-                                <button class="btn btn-success rounded-pill px-4 py-2 detail-btn w-100"
-                                    data-bs-toggle="modal" data-bs-target="#albendazoleModal">
-                                    Detail Indikasi & Dosis
-                                </button>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm p-4">
+                                <i class="bi bi-capsules-pill text-warning display-4 mb-3"></i>
+                                <h4 class="fw-bold">Albendazole</h4>
+                                <p class="text-muted">Memutus pasokan energi bagi cacing agar parasit tidak dapat
+                                    bertahan hidup</p>
+                                <button class="btn btn-sm btn-outline-warning rounded-pill mt-auto"
+                                    data-bs-toggle="modal" data-bs-target="#albendazoleModal">Lihat Penjelasan</button>
                             </div>
                         </div>
                     </div>
@@ -480,38 +229,45 @@
                         aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4 bg-light">
-                    <div class="horizontal-scroll-wrapper">
-                        <div class="side-effect-card">
-                            <img src="filariasiscare_assets/pengobatan/Demam.png" alt="Demam" class="side-effect-img">
-                            <h6 class="fw-bold mb-0">Demam</h6>
+                    <h5 class="fw-bold mb-4 text-center">Beberapa kemungkinan efek samping:</h5>
+                    <div class="row g-3 text-center">
+                        <div class="col-4 col-md-3">
+                            <div class="p-3 bg-white rounded shadow-sm"><i
+                                    class="bi bi-thermometer-high text-danger fs-1"></i>
+                                <p class="mt-2 mb-0 fw-bold">Demam</p>
+                            </div>
                         </div>
-                        <div class="side-effect-card">
-                            <img src="filariasiscare_assets/pengobatan/Sakit_kepala.png" alt="Sakit Kepala"
-                                class="side-effect-img">
-                            <h6 class="fw-bold mb-0">Sakit Kepala</h6>
+                        <div class="col-4 col-md-3">
+                            <div class="p-3 bg-white rounded shadow-sm"><i class="bi bi-headset text-warning fs-1"></i>
+                                <p class="mt-2 mb-0 fw-bold">Sakit Kepala</p>
+                            </div>
                         </div>
-                        <div class="side-effect-card">
-                            <img src="filariasiscare_assets/pengobatan/Nyeri_otot.png" alt="Nyeri Otot"
-                                class="side-effect-img">
-                            <h6 class="fw-bold mb-0">Nyeri Otot</h6>
+                        <div class="col-4 col-md-3">
+                            <div class="p-3 bg-white rounded shadow-sm"><i class="bi bi-activity text-info fs-1"></i>
+                                <p class="mt-2 mb-0 fw-bold">Nyeri Otot</p>
+                            </div>
                         </div>
-                        <div class="side-effect-card">
-                            <img src="filariasiscare_assets/pengobatan/Mual.png" alt="Mual" class="side-effect-img">
-                            <h6 class="fw-bold mb-0">Mual</h6>
+                        <div class="col-4 col-md-3">
+                            <div class="p-3 bg-white rounded shadow-sm"><i class="bi bi-water text-primary fs-1"></i>
+                                <p class="mt-2 mb-0 fw-bold">Mual</p>
+                            </div>
                         </div>
-                        <div class="side-effect-card">
-                            <img src="filariasiscare_assets/pengobatan/Sakit_perut.png" alt="Sakit Perut"
-                                class="side-effect-img">
-                            <h6 class="fw-bold mb-0">Sakit Perut</h6>
+                        <div class="col-4 col-md-3">
+                            <div class="p-3 bg-white rounded shadow-sm"><i
+                                    class="bi bi-hand-thumbs-down border fs-1"></i>
+                                <p class="mt-2 mb-0 fw-bold">Sakit Perut</p>
+                            </div>
                         </div>
-                        <div class="side-effect-card">
-                            <img src="filariasiscare_assets/pengobatan/Bengkak.png" alt="Bengkak"
-                                class="side-effect-img">
-                            <h6 class="fw-bold mb-0">Bengkak</h6>
+                        <div class="col-4 col-md-3">
+                            <div class="p-3 bg-white rounded shadow-sm"><i
+                                    class="bi bi-droplet-half text-secondary fs-1"></i>
+                                <p class="mt-2 mb-0 fw-bold">Bengkak</p>
+                            </div>
                         </div>
-                        <div class="side-effect-card">
-                            <img src="filariasiscare_assets/pengobatan/Gatal.png" alt="Gatal" class="side-effect-img">
-                            <h6 class="fw-bold mb-0">Gatal-gatal</h6>
+                        <div class="col-4 col-md-3">
+                            <div class="p-3 bg-white rounded shadow-sm"><i class="bi bi-virus text-success fs-1"></i>
+                                <p class="mt-2 mb-0 fw-bold">Gatal</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -543,9 +299,8 @@
                                 <div class="accordion-body bg-light">
                                     <ul class="mb-0">
                                         <li>Istirahat yang cukup.</li>
-                                        <li>Minum air putih lebih banyak.</li>
-                                        <li>Bila perlu, minum obat penurun demam (seperti Paracetamol) sesuai anjuran
-                                            petugas kesehatan.</li>
+                                        <li>Minum air putih minimal 2 liter per hari.</li>
+                                        <li>Konsumsi Paracetamol (500 mg untuk dewasa, setiap 6-8 jam jika perlu).</li>
                                     </ul>
                                 </div>
                             </div>
@@ -562,8 +317,8 @@
                                 data-bs-parent="#penangananAccordionModal">
                                 <div class="accordion-body bg-light">
                                     <ul class="mb-0">
-                                        <li>Makan dalam porsi sedikit tapi sering.</li>
-                                        <li>Hindari makanan yang terlalu asam atau pedas sementara waktu.</li>
+                                        <li>Pastikan obat filariasis diminum setelah makan kenyang.</li>
+                                        <li>Konsumsi air jahe hangat dapat membantu meredakan mual secara alami.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -581,8 +336,8 @@
                                 <div class="accordion-body bg-light">
                                     <ul class="mb-0">
                                         <li>Kompres dingin pada bagian yang bengkak.</li>
-                                        <li>Hindari menggaruk bagian yang gatal.</li>
-                                        <li>Jika gatal sangat mengganggu, bicarakan dengan petugas.</li>
+                                        <li>Gunakan antihistamin ringan seperti Cetirizine (10 mg, sekali sehari) jika
+                                            gatal.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -642,6 +397,86 @@
     </div>
 
     <!-- Detail Modals for Drugs -->
+    <!-- Ivermectin Modal -->
+    <div class="modal fade" id="ivermectinModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold text-success"><i class="bi bi-capsules-pill me-2"></i>Ivermectin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <h6 class="fw-bold text-success mb-2">Indikasi</h6>
+                    <ul class="small mb-4">
+                        <li>Filariasis limfatik, Onchocerciasis, Strongyloidiasis.</li>
+                        <li>Ivermectin bekerja melumpuhkan sistem saraf parasit sehingga mikrofilaria mati.</li>
+                    </ul>
+                    <h6 class="fw-bold text-danger mb-2">Kontraindikasi</h6>
+                    <ul class="small mb-4">
+                        <li>Ibu hamil, Anak &lt; 5 tahun atau berat &lt; 15 kg.</li>
+                        <li>Hipersensitivitas terhadap ivermectin, Gangguan neurologis tertentu.</li>
+                    </ul>
+                    <h6 class="fw-bold text-primary mb-2">Dosis</h6>
+                    <p class="small mb-0">150–200 mcg/kgBB dosis tunggal (1 kali setiap tahun selama 5 tahun atau
+                        lebih).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DEC Modal -->
+    <div class="modal fade" id="decModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold text-primary"><i class="bi bi-capsules-pill me-2"></i>DEC</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <h6 class="fw-bold text-primary mb-2">Indikasi</h6>
+                    <ul class="small mb-4">
+                        <li>Terapi filariasis limfatik (W. bancrofti, B. malayi, B. timori).</li>
+                        <li>Dalam POPM membunuh mikrofilaria dan mengurangi transmisi.</li>
+                    </ul>
+                    <h6 class="fw-bold text-danger mb-2">Kontraindikasi</h6>
+                    <ul class="small mb-4">
+                        <li>Ibu hamil, Anak usia &lt; 2 tahun.</li>
+                        <li>Penyakit berat/akut, Hipersensitivitas terhadap DEC.</li>
+                    </ul>
+                    <h6 class="fw-bold text-primary mb-2">Dosis</h6>
+                    <p class="small mb-0">6 mg/kgBB/hari. Dalam POPM: 1 kali setiap tahun selama minimal 5 tahun.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Albendazole Modal -->
+    <div class="modal fade" id="albendazoleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold text-warning"><i class="bi bi-capsules-pill me-2"></i>Albendazole
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <h6 class="fw-bold text-warning mb-2">Indikasi</h6>
+                    <ul class="small mb-4">
+                        <li>Antelmintik spektrum luas, menghambat metabolisme glukosa cacing.</li>
+                        <li>Kombinasi dengan DEC/Ivermectin untuk filariasis dan cacing usus.</li>
+                    </ul>
+                    <h6 class="fw-bold text-danger mb-2">Kontraindikasi</h6>
+                    <ul class="small mb-4">
+                        <li>Ibu hamil (trimester pertama), Anak &lt; 2 tahun.</li>
+                        <li>Alergi benzimidazole, Gangguan fungsi hati berat.</li>
+                    </ul>
+                    <h6 class="fw-bold text-primary mb-2">Dosis</h6>
+                    <p class="small mb-0">400 mg dosis tunggal. Dalam POPM: 1 kali setahun selama minimal 5 tahun.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
