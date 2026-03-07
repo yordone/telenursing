@@ -354,3 +354,104 @@ footer .social-icons a {
   font-size: 1.5rem;
   margin-right: 1rem;
 }
+
+/* Treatment Page Styles */
+.treatment-card {
+  border: none;
+  border-radius: 15px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.treatment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.drug-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background-color: #f4fdf4;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: var(--btn-color);
+  font-size: 2rem;
+}
+
+.horizontal-scroll-wrapper {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding: 1rem 0.5rem 2rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--btn-color) #f0f0f0;
+}
+
+.horizontal-scroll-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.horizontal-scroll-wrapper::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.horizontal-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: var(--btn-color);
+  border-radius: 10px;
+}
+
+.side-effect-card {
+  flex: 0 0 180px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.side-effect-icon {
+  font-size: 2.5rem;
+  color: var(--btn-color);
+  margin-bottom: 0.75rem;
+}
+
+.aman-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  height: 100%;
+  border-top: 5px solid var(--btn-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.aman-letter {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--btn-color);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.modal-content {
+  border-radius: 20px;
+  border: none;
+}
+
+.modal-header {
+  background-color: #f4fdf4;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 20px 20px 0 0 !important;
+}
+
+.warning-box {
+  background-color: #fff3cd;
+  border-left: 5px solid #ffc107;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
