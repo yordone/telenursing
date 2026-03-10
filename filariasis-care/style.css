@@ -288,6 +288,12 @@ h3.section-title {
   width: 280px;
 }
 
+@media (min-width: 992px) {
+  .scrolling-wrapper .card {
+    width: calc((100% - (2 * 1.5rem)) / 3);
+  }
+}
+
 .scrolling-wrapper::-webkit-scrollbar {
   height: 8px;
 }
