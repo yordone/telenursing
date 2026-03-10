@@ -294,6 +294,18 @@ h3.section-title {
   }
 }
 
+/* Custom styles for Mitos Fakta cards to fit images */
+.mitos-fakta-card .card-img-top-wrapper {
+  height: auto !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+.mitos-fakta-card .card-img-top-wrapper img {
+  padding: 0 !important;
+  object-fit: contain;
+}
+
 .scrolling-wrapper::-webkit-scrollbar {
   height: 8px;
 }
